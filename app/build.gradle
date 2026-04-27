@@ -1,1 +1,37 @@
+apply plugin: 'com.android.application'
 
+android {
+    namespace "com.tala24.autobot"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.tala24.autobot"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.22"
+
+    implementation 'org.jsoup:jsoup:1.17.2'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation "androidx.work:work-runtime-ktx:2.9.0"
+}
