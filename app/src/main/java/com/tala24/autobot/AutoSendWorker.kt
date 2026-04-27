@@ -15,7 +15,7 @@ class AutoSendWorker(appContext: Context, params: WorkerParameters) :
     Worker(appContext, params) {
 
     // TODO: اینجا توکن ربات خودت را بگذار
-    private val TOKEN = "توکن_ربات_خودت_اینجا"
+    private val TOKEN = "8447024292:AAG3HbCGFNIkNfMfWwoFy50mAn-YQstLqNM"
     private val CHANNEL = "@Tala24_B"
     private val client = OkHttpClient()
 
